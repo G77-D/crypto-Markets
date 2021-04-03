@@ -1,7 +1,7 @@
 import React, {useState, useEffect}from 'react'
 import axios from "axios";
 import Coins from "./components/Coins";
-
+import Searchbar from './components/Searchbar';
 
 
 const App = () => {
@@ -24,6 +24,7 @@ useEffect(() => {
 
 	return (
 		<>
+		<Searchbar />
 		<Coins coins={coins} />
 		</>
 	);
